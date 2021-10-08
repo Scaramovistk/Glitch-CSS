@@ -1,0 +1,39 @@
+<html>
+<head>
+    <style>
+        h1{
+            font-size:100px;
+            text-align:center;
+            animation: ghost 5s steps(100) infinite;
+            color:#fff;
+        }
+        p{
+            animation: glitch 1s steps(100) infinite;
+            font-size:50px;
+            text-align:center;
+            color:#fff;
+        }
+        
+        @keyframes ghost{
+            50%{opacity:1; color:blueviolet;}
+            100%,0%{opacity:0;color:blueviolet;}
+        }
+        
+        @keyframes glitch{
+            100%,0%{text-shadow: 4px 0 0 red, -4px 0 0 blue;}
+            12.5,68{text-shadow: -2px 0 0 lime, -2px 0 0 blue;}
+            50%{text-shadow: -1px 0 0 red, 1px 0 0 blue; }
+            75%,25%{text-shadow: -4px 0 0 lime, 4px 0 0 red;}
+            40%,80%{text-shadow: 2px 0 0 red, -2px 0 0 blue;}
+        }
+        
+</style>
+    </head>
+    <body style="background:#000">
+        <div style="margin-top:100px">
+             <h1> ______________</h1>
+                <p>Imposto e roubo</p>
+            <h1> ______________</h1>
+        </div>
+    </body>
+</html>
